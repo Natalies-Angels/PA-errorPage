@@ -42,7 +42,7 @@ body {
 .colon {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 -400px; /* Adjust margin for spacing between colons and numbers */
+  margin: 0 5px; /* Adjust margin for spacing between colons and numbers */
   margin-top: 55px;
 }
 
