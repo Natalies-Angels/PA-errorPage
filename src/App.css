@@ -61,6 +61,7 @@ body {
 
   .colon {
     margin: 0 2px; /* Adjust margin for spacing between colons and numbers on smaller screens */
+    margin-top: 20px;
   }
 }
 
