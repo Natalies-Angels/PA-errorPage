@@ -24,25 +24,27 @@ body {
 
 .time-block {
   text-align: center;
-  margin: 0 5px; /* Adjust margin for spacing between numbers */
+  margin: 0 10px; /* Adjust margin for spacing between numbers */
 }
 
 .time-unit {
-  font-size: 12px; /* Adjust the font size for time units */
+  font-size: 16px; /* Maintain the font size for time units */
   margin-top: 5px;
   color: #ffffff; /* White color for the words */
-  font-family: 'YourWordFont'; /* Replace with the actual font you want for the words */
+  font-family: 'digital-clock-font'; /* Maintain the font family */
 }
 
 .countdown-over {
   font-family: 'agrandir';
-  font-size: 18px; /* Adjust the font size for countdown over message */
+  font-size: 24px; /* Maintain the font size for the countdown over message */
 }
 
 .colon {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 2px; /* Adjust margin for spacing between colons and numbers */
+  margin:0 2px; /* Adjust margin for spacing between colons and numbers */
+  margin-top: 55px;
+  
 }
 
 /* Media query for smaller screens */
@@ -51,11 +53,21 @@ body {
     font-size: 30px; /* Adjust font size for smaller screens */
   }
 
+
   .time-unit {
-    font-size: 10px; /* Adjust font size for time units on smaller screens */
+    font-size: 12px; /* Adjust font size for time units on smaller screens */
   }
 
   .countdown-over {
-    font-size: 16px; /* Adjust font size for countdown over message on smaller screens */
+    font-size: 18px; /* Adjust font size for countdown over message on smaller screens */
   }
 }
+
+
+@font-face {
+  font-family: 'digital-clock-font';
+  src: url('digital-7 (mono).ttf');
+}
+
+
+
