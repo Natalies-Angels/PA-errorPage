@@ -42,15 +42,12 @@ body {
   font-size: 36px;
 }
 
-/* @font-face {
+@font-face {
   font-family: 'digital-clock-font';
   src: url('/home/natalie/Development/code/countdown-timer/digital-7 (mono).ttf');
-} */
-
-@font-face {
-  font-family: 'YourWordFont'; /* Replace with the actual font for the words */
-  src: url('/home/natalie/Development/code/countdown-timer/digital-7.ttf');
 }
+
+
 .colon {
   display: inline-block;
   vertical-align: middle;
