@@ -47,11 +47,11 @@ const CountdownTimer = () => {
           <p style={{ marginLeft: '30px' }} className="time-unit">Hours</p>
         </div>
         <div className="colon">:</div>
-        {/* <div className="time-block">
+        <div className="time-block">
           <p>{timeRemaining.minutes}</p>
           <p className="time-unit">Minutes</p>
-        </div> */}
-        {/* <div className="colon">:</div> */}
+        </div>
+        <div className="colon">:</div>
         <div className="time-block">
           <p>{timeRemaining.seconds}</p>
           <p className="time-unit">Seconds</p>
