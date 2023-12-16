@@ -46,7 +46,7 @@ body {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .digital-clock {
     font-size: 30px; /* Adjust font size for smaller screens */
   }
