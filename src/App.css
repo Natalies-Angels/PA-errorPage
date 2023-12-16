@@ -42,7 +42,6 @@ body {
 .colon {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 5px; /* Adjust margin for spacing between colons and numbers */
   margin-top: 55px;
 }
 
@@ -58,6 +57,9 @@ body {
 
   .countdown-over {
     font-size: 18px; /* Adjust font size for countdown over message on smaller screens */
+  }
+  .colon {
+    margin: 0 2px; /* Adjust margin for spacing between colons and numbers on smaller screens */
   }
 }
 
