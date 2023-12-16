@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import './App.css';
 
 const CountdownTimer = () => {
   const targetDate = useMemo(() => new Date('December 22, 2023 00:00:00 GMT+00:00'), []);
 
-  const calculateTimeRemaining = () => {
+  const calculateTimeRemaining = useCallback(() => {
     const now = new Date();
     const difference = targetDate - now;
 
@@ -18,7 +18,7 @@ const CountdownTimer = () => {
     } else {
       return { days: 0, hours: 0, minutes: 0, seconds: 0 };
     }
-  };
+  }, [targetDate]);
 
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
@@ -28,7 +28,7 @@ const CountdownTimer = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [calculateTimeRemaining]); // Added an empty dependency array to avoid the exhaustive-deps warning
+  }, [calculateTimeRemaining]);
 
   return (
     <div className="countdown-container">
