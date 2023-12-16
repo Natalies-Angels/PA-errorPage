@@ -24,7 +24,7 @@ body {
 
 .time-block {
   text-align: center;
-  margin: 0 10px; /* Adjust margin for spacing between numbers */
+  margin: 0 2px; /* Adjust margin for spacing between numbers */
 }
 
 .time-unit {
@@ -42,9 +42,8 @@ body {
 .colon {
   display: inline-block;
   vertical-align: middle;
-  margin:0 2px; /* Adjust margin for spacing between colons and numbers */
+  margin: 0 -120px; /* Adjust margin for spacing between colons and numbers */
   margin-top: 55px;
-  
 }
 
 /* Media query for smaller screens */
@@ -52,7 +51,6 @@ body {
   .digital-clock {
     font-size: 30px; /* Adjust font size for smaller screens */
   }
-
 
   .time-unit {
     font-size: 12px; /* Adjust font size for time units on smaller screens */
@@ -63,11 +61,7 @@ body {
   }
 }
 
-
 @font-face {
   font-family: 'digital-clock-font';
   src: url('digital-7 (mono).ttf');
 }
-
-
-
