@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.countdown-container {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 200px;
+}
+
+.digital-clock {
+  font-family: 'digital-clock-font';
+  display: flex;
+  font-size: 100px;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex: 0 0 auto;
+  position: relative;
+
+  background: linear-gradient(to right, #DF3434,#F88317,#63C634,#3758D0,#6E227A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.time-block {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.time-unit {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #ffffff; /* White color for the words */
+  font-family: 'YourWordFont'; /* Replace with the actual font you want for the words */
+}
+
+
+
+.countdown-over {
+  font-family: 'agrandir';
+  font-size: 36px;
+}
+
+@font-face {
+  font-family: 'digital-clock-font';
+  src: url('/home/natalie/Development/code/countdown-timer/digital-7 (mono).ttf');
+}
+
+@font-face {
+  font-family: 'YourWordFont'; /* Replace with the actual font for the words */
+  src: url('/home/natalie/Development/code/countdown-timer/digital-7.ttf');
+}
+.colon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px; /* Adjust the margin as needed for spacing between colons and numbers */
+  margin-top: 100px;
+}
+
