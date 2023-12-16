@@ -33,6 +33,9 @@ const CountdownTimer = () => {
   return (
     <div className="countdown-container">
       <img src='./LemaArtboard3IconsBlack.png' alt='PAlogo' />
+      <p style={{ fontSize: 'smaller', marginTop: '40px', padding: '50px', fontWeight: 'lighter' }}>
+       i have the courage to understand my lot, and the will to drive my change
+      </p>
       <div className="digital-clock">
         <div className="time-block">
           <p>{timeRemaining.days}</p>
@@ -44,11 +47,11 @@ const CountdownTimer = () => {
           <p style={{ marginLeft: '30px' }} className="time-unit">Hours</p>
         </div>
         <div className="colon">:</div>
-        <div className="time-block">
+        {/* <div className="time-block">
           <p>{timeRemaining.minutes}</p>
           <p className="time-unit">Minutes</p>
-        </div>
-        <div className="colon">:</div>
+        </div> */}
+        {/* <div className="colon">:</div> */}
         <div className="time-block">
           <p>{timeRemaining.seconds}</p>
           <p className="time-unit">Seconds</p>
@@ -57,9 +60,7 @@ const CountdownTimer = () => {
       {timeRemaining.days === 0 && timeRemaining.hours === 0 && timeRemaining.minutes === 0 && timeRemaining.seconds === 0 ? (
         <p className="countdown-over">Countdown is over!</p>
       ) : null}
-      <p style={{ fontSize: 'smaller', marginTop: '100px', padding: '50px', fontWeight: 'lighter' }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit tortor eget velit porttitor maximus.
-      </p>
+      
     </div>
   );
 };
