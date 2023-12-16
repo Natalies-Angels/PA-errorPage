@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import logo from './LemaArtboard3IconsBlack.png'
 
 const CountdownTimer = () => {
   const targetDate = new Date('December 22, 2023 00:00:00 GMT+00:00');
@@ -29,20 +28,20 @@ const CountdownTimer = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); // Added an empty dependency array to avoid the exhaustive-deps warning
 
   return (
     <div className="countdown-container">
-      <img src='./LemaArtboard3IconsBlack.png'alt='PAlogo'/>
+      <img src='./LemaArtboard3IconsBlack.png' alt='PAlogo' />
       <div className="digital-clock">
         <div className="time-block">
           <p>{timeRemaining.days}</p>
-          <p  className="time-unit">Days</p>
+          <p className="time-unit">Days</p>
         </div>
         <div className="colon">:</div>
         <div className="time-block">
           <p>{timeRemaining.hours}</p>
-          <p style={{ marginLeft: '30px' }}  className="time-unit">Hours</p>
+          <p style={{ marginLeft: '30px' }} className="time-unit">Hours</p>
         </div>
         <div className="colon">:</div>
         <div className="time-block">
@@ -58,7 +57,9 @@ const CountdownTimer = () => {
       {timeRemaining.days === 0 && timeRemaining.hours === 0 && timeRemaining.minutes === 0 && timeRemaining.seconds === 0 ? (
         <p className="countdown-over">Countdown is over!</p>
       ) : null}
-      <p style={{fontSize:'smaller', marginTop:'100px', padding:'50px', fontWeight:'lighter'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit tortor eget velit porttitor maximus. </p>
+      <p style={{ fontSize: 'smaller', marginTop: '100px', padding: '50px', fontWeight: 'lighter' }}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit tortor eget velit porttitor maximus.
+      </p>
     </div>
   );
 };
