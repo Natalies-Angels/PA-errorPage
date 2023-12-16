@@ -28,7 +28,7 @@ const CountdownTimer = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []); // Added an empty dependency array to avoid the exhaustive-deps warning
+  }, [calculateTimeRemaining]); // Added an empty dependency array to avoid the exhaustive-deps warning
 
   return (
     <div className="countdown-container">
