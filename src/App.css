@@ -52,11 +52,11 @@ body {
 /* Media query for smaller screens */
 @media (max-width: 576px) {
   .digital-clock {
-    font-size: 5vw; /* Adjust font size for smaller screens */
+    font-size: 7vw; /* Adjust font size for smaller screens */
   }
 
   .time-unit {
-    font-size: 1em; /* Adjust font size for time units on smaller screens */
+    font-size: 4vw; /* Adjust font size for time units on smaller screens */
   }
 
   .countdown-over {
@@ -67,6 +67,7 @@ body {
     margin: 0 2px; /* Adjust margin for spacing between colons and numbers on smaller screens */
     margin-top: 20px;
   }
+  
 }
 
 @font-face {

@@ -45,7 +45,7 @@ const CountdownTimer = () => {
         <div className="colon">:</div>
         <div className="time-block">
           <p>{timeRemaining.hours}</p>
-          <p style={{ marginLeft: '30px' }} className="time-unit">Hours</p>
+          <p style={{ marginRight: '-13px' }} className="time-unit">Hours</p>
         </div>
         <div className="colon">:</div>
         <div className="time-block">
