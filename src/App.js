@@ -32,9 +32,10 @@ const CountdownTimer = () => {
 
   return (
     <div className="countdown-container">
-      <img src='./LemaArtboard3IconsBlack.png' alt='PAlogo' />
-      <p style={{ fontSize: 'smaller', marginTop: '40px', padding: '50px', fontWeight: 'lighter' }}>
-       i have the courage to understand my lot, and the will to drive my change
+      {/* <img src='./LemaArtboard3IconsBlack.png' alt='PAlogo' /> */}
+      <p style={{ fontSize:'smaller', marginBottom: '0px', padding: '10px', fontWeight: 'lighter' }} className='first-p'>
+       i have the courage to understand my lot, </p>
+       <p style={{ fontSize: 'smaller', marginTop: '5px', padding: '10px', fontWeight: 'lighter' }} className='second-p'>and the will to drive my change
       </p>
       <div className="digital-clock">
         <div className="time-block">

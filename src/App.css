@@ -6,8 +6,12 @@ body {
 .countdown-container {
   text-align: center;
   font-size: 24px;
-  padding-top: 50px; /* Adjust padding as needed */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  width: 100%;
 }
+
 
 .digital-clock {
   font-family: 'digital-clock-font';
